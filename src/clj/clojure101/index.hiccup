@@ -1,0 +1,7 @@
+[:div {:style "text-align: center;"}
+ [:img {:src "https://raw.github.com/slagyr/joodoweb/master/resources/public/images/logo.png"}]
+ [:h1 (:message *view-context*)]
+ [:form {:action "/guess" :method "POST"}
+  [:input {:type "number" :name "guess" :required true :placeholder "Number"}]
+  [:input {:type "submit" :value "Guess"}]]]
+
